@@ -1,0 +1,57 @@
+html,
+body {
+    margin: 0;
+    text-align: center;
+}
+
+#root {
+    height: 100vh;
+    background-color: rgb(189, 224, 234);
+    display: grid;
+    grid-template-rows: 20% 10% 1fr;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form.new-item {
+    align-self: end;
+    border: 1px solid rgb(176, 185, 198);
+    border-radius: 5px;
+    padding: 1rem;
+    justify-items: center;
+}
+
+input:focus {
+    outline: none;
+}
+
+#item {
+    border: none;
+    background-color: transparent;
+    border-bottom: solid 1px black;
+}
+
+h1 {
+    grid-row: 2/3;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+ul.list {
+    grid-row: 3/4;
+    overflow: auto;
+    list-style-type: none;
+    padding: 2px;
+}
+
+.btn {
+    border: none;
+    padding: 5px;
+    margin-top: 1rem;
+}
+
+.btn-delete {
+    border: none;
+    background-color: transparent;
+    color: red;
+    float: right;
+}
